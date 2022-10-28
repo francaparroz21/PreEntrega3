@@ -485,6 +485,15 @@ body {
 
 }
 
+/*Catalogue breakpoints*/
+@media only screen and (max-width: 650px){
+    .catalogue_container {
+        display: flex;
+        flex-direction: column ;
+    }
+}
+
+
 
 /*Breakpoint footer*/
 
