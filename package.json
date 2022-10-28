@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/francaparroz21/PreEntrega3-Caparroz/issues"
   },
-  "homepage": "https://github.com/francaparroz21/PreEntrega3-Caparroz#readme"
+  "homepage": "https://github.com/francaparroz21/PreEntrega3-Caparroz#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
 }
