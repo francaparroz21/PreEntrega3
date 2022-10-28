@@ -1,0 +1,71 @@
+.bannerBox {
+    padding-top: 4px;
+    display: grid;
+    place-items: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+main {
+    .intro_desc {
+        padding: 30px 50px 30px 50px;
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            line-height: 30px;
+            color: var(--blanco);
+        }
+        a {
+            color: var(--blanco);
+        }
+        a:hover {
+            background-color: white;
+            color: var(--negro);
+            transition: .3s;
+        
+        }
+    }
+    .publication_makeup{
+        justify-content: center;
+
+        .publication_makeup_intro {
+            text-align: center;
+        }
+        article{
+            justify-self: center;
+        } 
+
+    }
+
+    .publication_makeup_steps {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+
+        ul {
+            list-style-type: none;
+        }
+
+        .steps {
+            padding: 10px;
+        }
+    }
+    .since {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+
+    .photo1,
+    .photo2 {
+        width: 290px;
+        justify-content: center;
+    }
+}

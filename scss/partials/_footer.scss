@@ -1,0 +1,39 @@
+footer{
+    margin-top: 1px;
+    padding: 15px;
+
+    section {
+        padding: 10px;
+        .instagram_footer {
+            display: flex;
+
+            .instagram_logo {
+                padding-left: 20px;
+
+                a:hover {
+                    padding: 50px;
+                    transition: .5s;
+                }
+            }
+            section p a {
+                padding-left: 20px;
+                width: 30px;
+            }
+
+            div a img {
+                width: 30px;
+            }
+        }
+    }
+
+    .query {
+        text-align: center;
+
+        .input_query {
+            border-radius: 5px;
+            border: 1px solid white;
+            height: 100px;
+        }
+    }
+
+}
