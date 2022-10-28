@@ -1,0 +1,34 @@
+/* Services */
+
+main{
+    .container_services{
+        div{ 
+            section{
+                padding: 10px;
+                padding: 20px 50px 10px 50px;
+                border: 2px outset #d9d7d7;
+                text-align: center;
+                .content_info{
+                    article{
+                        ul{
+                            list-style-type: none;
+                        }
+                        .see_more {
+                            padding: 8px;
+                            display: flex;
+                            justify-content: flex-end;
+                            a{
+                            text-decoration: none;
+                            color: white;
+                            border: 1px solid white;
+                            border-radius: 18px;
+                            padding: 10px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
