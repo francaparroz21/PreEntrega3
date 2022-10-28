@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Bossy2.png" type="image/x-icon">
+    <link href="//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Bossy</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid">
+                <div class="navbar-left">
+                    <a href="index.html">
+                        <img class="navbarLogo" src="images/Bossy2.png">
+                    </a>
+                    <div id="collapse_items" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-3">
+                            <div>
+                                <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                            </div>
+                            <div>
+                                <li class="nav-item"><a class="nav-link" href="services.html">SERVICIOS</a></li>
+                            </div>
+                            <div>
+                                <li class="nav-item"><a class="nav-link" href="catalogue.html">CATALOGO</a></li>
+                            </div>
+                            <div>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACTO</a></li>
+                            </div>
+                            <div>
+                                <li class="nav-item"><a class="nav-link" href="help.html">AYUDA</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse_items">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contact" class="container-fluid">
+            <form class="container" action="" method="">
+                <p>Nombre: <input class="name_form" type="text" name="name" size="40"></p>
+                <p>Apellido: <input class="sur_form" type="text" name="surname" size="40"></p>
+                <p>Fecha de nacimiento: <input class="born" type="date" id="start" name="trip-start" value="2018-07-22"
+                        min="2018-01-01" max="2018-12-31"></p>
+                <p>Sexo:
+                    <input type="radio" name="hm" value="h"> Hombre
+                    <input type="radio" name="hm" value="m"> Mujer
+                </p>
+
+                <p>Telefono <input type="number" name="phone_number"></p>
+                <p>Consulta: <input class="query" type="text" size="30"></p>
+                <p class="buttons">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </p>
+            </form>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row">
+            <section class="col" class="query">
+                <h4>Tienes alguna duda?</h4>
+                <input class="input_query" type="text" name="Ingrese su consulta o pregunta.">
+            </section>
+
+            <section class="col" class="footer_contact">
+                <div>
+                    <h4>Contacto</h4>
+                    <p>bossyvalentina@gmail.com</p>
+                </div>
+                <div>
+                    <h4>Telefono</h4>
+                    <p>+54 351-----</p>
+                </div>
+                <div>
+                    <h4>Instagram</h4>
+                    <div class="instagram_footer">
+                        <p>Bossy Skincare</p>
+                        <div class="instagram_logo"><a href="https://www.instagram.com/bossy.skincare/"><img
+                                    src="./images/logo_instagram.jpg"></a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
