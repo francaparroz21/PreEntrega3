@@ -5,6 +5,8 @@ footer{
 
     section {
         padding: 10px;
+        display: flex;
+        justify-content: space-around;
         .instagram_footer {
             display: flex;
 
@@ -26,8 +28,6 @@ footer{
             }
         }
     }
-
-
 }
 
 /*Breakpoint footer*/
