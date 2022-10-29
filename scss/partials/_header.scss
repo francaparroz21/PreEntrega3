@@ -1,11 +1,7 @@
 //HEADER NAVBAR
 header{
     .navbar{
-        padding: 20px;
-        font-size: 15px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        @include flex(row,wrap,space-between,flex-start,10px);
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
         -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
         -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);

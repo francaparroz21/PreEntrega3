@@ -103,9 +103,12 @@ footer {
   margin-top: 1px;
   padding: 15px; }
   footer section {
-    padding: 10px;
     display: flex;
-    justify-content: space-around; }
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px; }
     footer section .instagram_footer {
       display: flex; }
       footer section .instagram_footer .instagram_logo {
@@ -125,11 +128,12 @@ footer {
     font-size: x-small; } }
 
 header .navbar {
-  padding: 20px;
-  font-size: 15px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52); }
@@ -158,13 +162,6 @@ header .navbar {
         text-transform: uppercase;
         font-weight: 600; }
 
-.bannerBox {
-  padding-top: 4px;
-  display: grid;
-  place-items: center; }
-  .bannerBox img {
-    width: 100%; }
-
 main .intro_desc {
   padding: 30px 50px 30px 50px; }
   main .intro_desc p {
@@ -174,39 +171,41 @@ main .intro_desc {
     color: var(--blanco); }
   main .intro_desc a {
     color: var(--blanco); }
-    main .intro_desc a:hover {
-      background-color: white;
-      color: var(--negro);
-      transition: .3s; }
+  main .intro_desc a:hover {
+    background-color: white;
+    color: var(--negro);
+    transition: .3s; }
 
-main .publication_makeup article {
-  justify-self: center; }
+main .publication_makeup {
+  justify-content: center; }
 
-main .photo1,
-main .photo2 {
-  width: 300px;
-  height: 300px; }
+main .publication_makeup_intro {
+  text-align: center; }
 
-.publication_makeup_steps {
+main .photo1, main .photo2 {
+  width: 400px;
+  height: 400px; }
+
+main .publication_makeup_steps {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px; }
+  padding: 5px;
+  justify-content: space-around; }
+  main .publication_makeup_steps ul {
+    list-style-type: none; }
+  main .publication_makeup_steps .steps {
+    padding: 10px; }
 
-.publication_makeup_steps ul {
-  list-style-type: none; }
-
-.since {
+main .since {
   padding-top: 50px;
   text-align: center; }
 
-.publication_makeup_steps .steps {
-  padding: 10px; }
-
-.publication_makeup_intro {
-  text-align: center; }
-
-.publication_makeup {
-  justify-content: center; }
+.bannerBox {
+  padding-top: 4px;
+  display: grid;
+  place-items: center; }
+  .bannerBox img {
+    width: 100%; }
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
   .photo1,
