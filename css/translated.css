@@ -313,7 +313,6 @@ main .container_help {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 600px;
   margin: auto; }
   main .container_help article > * {
     padding: 5px; }
