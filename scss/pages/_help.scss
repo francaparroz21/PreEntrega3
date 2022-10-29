@@ -1,0 +1,32 @@
+/*Help*/
+
+main{
+    h2{
+        padding: 20px;
+        text-align: center;
+    }
+    .container_help{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 600px;
+        margin: auto;
+        article > *{
+            padding: 5px;
+
+            a{
+                text-decoration: none;
+                color: var(--blanco);
+                text-decoration-line: underline;
+                &:hover{
+                    background-color: var(--blanco);
+                    color: var(--negro);
+                    transition: .3s;
+                }
+             
+             }
+        }
+    }
+}
+
+

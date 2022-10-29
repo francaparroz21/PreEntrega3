@@ -92,10 +92,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-a {
-  color: var(--blanco);
-  text-decoration: none; }
-
 main,
 footer {
   font-family: 'Rubik', sans-serif;
@@ -120,12 +116,11 @@ footer {
         width: 30px; }
       footer section .instagram_footer div a img {
         width: 30px; }
-  footer .query {
-    text-align: center; }
-    footer .query .input_query {
-      border-radius: 5px;
-      border: 1px solid white;
-      height: 100px; }
+
+/*Breakpoint footer*/
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  footer section > * {
+    font-size: x-small; } }
 
 header .navbar {
   padding: 20px;
@@ -135,8 +130,7 @@ header .navbar {
   flex-wrap: wrap;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
-  flex-wrap: wrap; }
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52); }
   header .navbar a {
     text-decoration: none;
     color: var(--negro); }
@@ -152,8 +146,7 @@ header .navbar {
       margin-right: 20px; }
     header .navbar .navbar-left ul {
       display: flex;
-      align-items: center;
-      flex-wrap: wrap; }
+      align-items: center; }
       header .navbar .navbar-left ul * {
         margin: 10px; }
       header .navbar .navbar-left ul div li a:hover {
@@ -162,18 +155,6 @@ header .navbar {
       header .navbar .navbar-left ul div li {
         text-transform: uppercase;
         font-weight: 600; }
-  header .navbar .navbar-right {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 10px; }
-    header .navbar .navbar-right a {
-      border: 1px solid black;
-      border-radius: 40px;
-      padding: 5px 20px; }
-      header .navbar .navbar-right a:hover {
-        background-color: var(--cinderella);
-        transition: .3s; }
 
 .bannerBox {
   padding-top: 4px;
@@ -191,30 +172,39 @@ main .intro_desc {
     color: var(--blanco); }
   main .intro_desc a {
     color: var(--blanco); }
-  main .intro_desc a:hover {
-    background-color: white;
-    color: var(--negro);
-    transition: .3s; }
+    main .intro_desc a:hover {
+      background-color: white;
+      color: var(--negro);
+      transition: .3s; }
 
-main .publication_makeup {
-  justify-content: center; }
-  main .publication_makeup .publication_makeup_intro {
-    text-align: center; }
-  main .publication_makeup article {
-    justify-self: center; }
+main .publication_makeup article {
+  justify-self: center; }
 
-main .publication_makeup_steps {
+main .photo1,
+main .photo2 {
+  width: 300px;
+  height: 300px; }
+
+.publication_makeup_steps {
   display: flex;
   flex-wrap: wrap;
   padding: 5px; }
-  main .publication_makeup_steps ul {
-    list-style-type: none; }
-  main .publication_makeup_steps .steps {
-    padding: 10px; }
 
-main .since {
+.publication_makeup_steps ul {
+  list-style-type: none; }
+
+.since {
   padding-top: 50px;
   text-align: center; }
+
+.publication_makeup_steps .steps {
+  padding: 10px; }
+
+.publication_makeup_intro {
+  text-align: center; }
+
+.publication_makeup {
+  justify-content: center; }
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
   .photo1,
@@ -223,20 +213,115 @@ main .since {
     justify-content: center; } }
 
 /* Services */
-main .container_services div section {
+main .container_services section {
   padding: 10px;
   padding: 20px 50px 10px 50px;
   border: 2px outset #d9d7d7;
   text-align: center; }
-  main .container_services div section .content_info article ul {
-    list-style-type: none; }
-  main .container_services div section .content_info article .see_more {
-    padding: 8px;
+  main .container_services section div {
+    height: min-content; }
+    main .container_services section div article ul {
+      list-style-type: none; }
+    main .container_services section div article .see_more {
+      padding: 8px;
+      display: flex;
+      justify-content: flex-end; }
+      main .container_services section div article .see_more a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 18px;
+        padding: 10px; }
+        main .container_services section div article .see_more a:hover {
+          background-color: var(--blanco);
+          color: black;
+          transition: .5s; }
+
+/*Catalogue */
+main .catalogue_container {
+  display: grid;
+  grid-area: "breast cellucontrol gelabs" "alpinemask serum gelabs";
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 20px; }
+  main .catalogue_container article h5 {
+    text-align: center; }
+  main .catalogue_container article div {
     display: flex;
-    justify-content: flex-end; }
-    main .container_services div section .content_info article .see_more a {
+    justify-content: center; }
+    main .catalogue_container article div img {
+      width: 100px; }
+  main .catalogue_container .breast {
+    grid-area: breast;
+    grid-column: 1/4;
+    grid-row: 1/3; }
+  main .catalogue_container .cellucontrol {
+    grid-area: cellucontrol;
+    grid-column: 4/8;
+    grid-row: 1/3; }
+  main .catalogue_container .gelabs {
+    grid-area: gelabs;
+    grid-column: 8/12;
+    grid-row: 1/5; }
+  main .catalogue_container .alpinemask {
+    grid-area: alpinemask;
+    grid-column: 1/4;
+    grid-row: 3/5; }
+  main .catalogue_container .serum {
+    grid-area: serum;
+    grid-column: 4/8;
+    grid-row: 3/5; }
+
+/*Catalogue breakpoints*/
+@media only screen and (max-width: 650px) {
+  main .catalogue_container {
+    display: flex;
+    flex-direction: column; } }
+
+/*Contact form*/
+main .contact {
+  padding: 40px;
+  display: flex;
+  justify-content: center; }
+  main .contact form {
+    padding: 20px;
+    border: 2px solid var(--blanco);
+    width: min-content; }
+    main .contact form .sur_form, main .contact form .name_form, main .contact form .query, main .contact form .born {
+      background-color: white; }
+    main .contact form .query {
+      height: 100px; }
+    main .contact form .buttons {
+      padding: 10px;
+      display: flex;
+      justify-content: end; }
+      main .contact form .buttons input {
+        padding: 4px;
+        margin: 5px; }
+
+/*Contact Breakpoint*/
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .sur_form, .name_form, .query {
+    width: 200px; } }
+
+/*Help*/
+main h2 {
+  padding: 20px;
+  text-align: center; }
+
+main .container_help {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 600px;
+  margin: auto; }
+  main .container_help article > * {
+    padding: 5px; }
+    main .container_help article > * a {
       text-decoration: none;
-      color: white;
-      border: 1px solid white;
-      border-radius: 18px;
-      padding: 10px; }
+      color: var(--blanco);
+      text-decoration-line: underline; }
+      main .container_help article > * a:hover {
+        background-color: var(--blanco);
+        color: var(--negro);
+        transition: .3s; }

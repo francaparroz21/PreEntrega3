@@ -1,3 +1,4 @@
+//FOOTER
 footer{
     margin-top: 1px;
     padding: 15px;
@@ -26,14 +27,14 @@ footer{
         }
     }
 
-    .query {
-        text-align: center;
 
-        .input_query {
-            border-radius: 5px;
-            border: 1px solid white;
-            height: 100px;
-        }
+}
+
+/*Breakpoint footer*/
+
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    footer section > *{
+        font-size: x-small;
     }
 
 }

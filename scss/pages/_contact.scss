@@ -1,0 +1,38 @@
+/*Contact form*/
+
+main{
+    .contact{
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        form{
+            padding: 20px;
+            border: 2px solid var(--blanco);
+            width: min-content;
+            .sur_form,.name_form,.query,.born{
+                background-color: white;
+            }
+            .query{
+                height: 100px;
+            }
+            .buttons{
+                padding: 10px;
+                display: flex;
+                justify-content: end;
+                input{
+                    padding: 4px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+/*Contact Breakpoint*/
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+
+    .sur_form,.name_form,.query{
+        width: 200px;
+    }
+
+}
