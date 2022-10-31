@@ -92,6 +92,10 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0; }
+
 main,
 footer {
   font-family: 'Rubik', sans-serif;
@@ -112,19 +116,25 @@ footer {
     footer section .instagram_footer {
       display: flex; }
       footer section .instagram_footer .instagram_logo {
-        padding-left: 20px; }
-        footer section .instagram_footer .instagram_logo a:hover {
-          padding-left: 15px; }
-      footer section .instagram_footer section p a {
+        width: 80px;
         padding-left: 20px;
-        width: 30px; }
-      footer section .instagram_footer div a img {
-        width: 30px; }
+        overflow: hidden; }
+        footer section .instagram_footer .instagram_logo a img {
+          width: 40px; }
+          footer section .instagram_footer .instagram_logo a img:hover {
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            transition: 0.3s; }
 
 /*Breakpoint footer*/
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   footer section > * {
-    font-size: x-small; } }
+    font-size: x-small; }
+  footer .instagram_logo {
+    padding-left: 20px;
+    overflow: hidden; }
+    footer .instagram_logo img {
+      width: 30px; } }
 
 header .navbar {
   display: flex;

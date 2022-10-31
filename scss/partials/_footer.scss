@@ -10,22 +10,20 @@ footer{
             display: flex;
 
             .instagram_logo {
+                width: 80px;
                 padding-left: 20px;
-
+                overflow:hidden;              
                 a{
-                    &:hover {
-                    padding-left: 15px;
+                    img{
+                        width: 40px;
+                        &:hover{
+                            -webkit-transform:scale(0.5);transform:scale(0.5);
+                            transition: 0.3s;
+                        }
+                    }
                 }
             }
-            }
-            section p a {
-                padding-left: 20px;
-                width: 30px;
-            }
 
-            div a img {
-                width: 30px;
-            }
         }
     }
 }
@@ -33,7 +31,18 @@ footer{
 /*Breakpoint footer*/
 
 @media only screen and (min-width: 320px) and (max-width: 500px){
-    footer section > *{
-        font-size: x-small;
+    footer{
+        section > *{
+            font-size: x-small;}
+
+        .instagram_logo {
+            padding-left: 20px;
+            overflow:hidden;
+            img{
+                    width: 30px;
+                }
+        }
     }
+
+    
 }
