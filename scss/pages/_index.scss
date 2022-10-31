@@ -20,11 +20,11 @@ main {
     }
     .publication_makeup{
         justify-content: center;
+        .publication_makeup_intro {
+            text-align: center;
+        }    
         
     }
-    .publication_makeup_intro {
-        text-align: center;
-    }    
     .photo1,.photo2 {
         width: 400px;
         height: 400px;

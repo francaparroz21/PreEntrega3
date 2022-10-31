@@ -187,9 +187,8 @@ main .intro_desc {
 
 main .publication_makeup {
   justify-content: center; }
-
-main .publication_makeup_intro {
-  text-align: center; }
+  main .publication_makeup .publication_makeup_intro {
+    text-align: center; }
 
 main .photo1, main .photo2 {
   width: 400px;
