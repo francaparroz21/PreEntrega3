@@ -12,10 +12,11 @@ footer{
             .instagram_logo {
                 padding-left: 20px;
 
-                a:hover {
-                    padding: 50px;
-                    transition: .5s;
+                a{
+                    &:hover {
+                    padding-left: 15px;
                 }
+            }
             }
             section p a {
                 padding-left: 20px;
@@ -35,6 +36,4 @@ footer{
     footer section > *{
         font-size: x-small;
     }
-
-
 }

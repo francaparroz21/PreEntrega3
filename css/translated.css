@@ -114,8 +114,7 @@ footer {
       footer section .instagram_footer .instagram_logo {
         padding-left: 20px; }
         footer section .instagram_footer .instagram_logo a:hover {
-          padding: 50px;
-          transition: .5s; }
+          padding-left: 15px; }
       footer section .instagram_footer section p a {
         padding-left: 20px;
         width: 30px; }
